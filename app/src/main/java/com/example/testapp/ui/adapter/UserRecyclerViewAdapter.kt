@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
+
 import com.example.testapp.R
 import com.example.testapp.data.model.User
 
@@ -39,13 +41,16 @@ class UserRecyclerViewAdapter(
             email.text = user.email
             Glide.with(itemView.context)
                 .load(user.avatar)
+                .transition(withCrossFade())
+                .placeholder(R.drawable.placeholder)
                 .into(userImage)
         }
-
 
     }
 
     fun addData(list: List<User>) {
         userList.addAll(list)
     }
+
+
 }
