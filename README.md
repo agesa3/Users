@@ -34,6 +34,7 @@ Libraries used in the whole application are:
 - [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - Coroutines are computer program components that generalize subroutines for non-preemptive multitasking, by allowing execution to be suspended and resumed. Coroutines are well-suited for implementing familiar program components such as cooperative tasks, exceptions, event loops, iterators, infinite lists and pipes
 - [Retrofit](https://abhiandroid.com/programming/retrofit) - In Android, Retrofit is a REST Client for Java and Android by Square inc under Apache 2.0 license. Its a simple network library that used for network transactions. By using this library we can seamlessly capture JSON response from web service/web API.
 - [Koin](https://insert-koin.io/) -Koin is a pragmatic and lightweight dependency injection framework for Kotlin developers.
+- [CircleImageView](https://github.com/hdodenhof/CircleImageView) - A fast circular ImageView perfect for profile images. This is based on RoundedImageView from Vince Mi which itself is based on techniques recommended by Romain Guy.
 ## Demo
 <p float="left">
 <img src="https://github.com/agesa3/Users/blob/main/Screenshot_20220604_023849.png" width=250/>
