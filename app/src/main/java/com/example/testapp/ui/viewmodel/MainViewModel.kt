@@ -1,4 +1,4 @@
-package com.example.testapp.viewmodel
+package com.example.testapp.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,7 +10,7 @@ import com.example.testapp.utils.NetworkHelper
 import com.example.testapp.utils.Resource
 import kotlinx.coroutines.launch
 
-class MainRepository(
+class MainViewModel(
     private val mainRepository: MainRepository,
     private val networkHelper: NetworkHelper
 ) : ViewModel() {

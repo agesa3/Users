@@ -4,6 +4,8 @@
     package="com.example.testapp">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -16,7 +18,7 @@
         android:theme="@style/Theme.TestApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
