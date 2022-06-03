@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Build
 import com.example.testapp.BuildConfig
 import com.example.testapp.data.api.ApiHelper
+import com.example.testapp.data.api.ApiHelperImpl
 import com.example.testapp.data.api.ApiService
 import com.example.testapp.utils.Constants
 import com.example.testapp.utils.NetworkHelper
@@ -21,7 +22,11 @@ val appModule = module {
     single { provideNetworkHelper(androidContext()) }
     single { provideRetrofit(get(), BASE_URL = Constants.BASE_URL) }
     single { provideOkHttpClient() }
+    single<ApiHelper> {
+        return@single ApiHelperImpl(get())
+    }
 }
+
 
 private fun provideNetworkHelper(context: Context) = NetworkHelper(context)
 
